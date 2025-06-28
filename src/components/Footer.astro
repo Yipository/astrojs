@@ -1,0 +1,30 @@
+---
+import Social from "./Social.astro";
+
+const platform = {
+    gmail: "gmail",
+    github: "github",
+    twitter: "twitter",
+    instagram: "instagram",
+    facebook: "facebook",
+    linkedin: "linkedin",
+    youtube: "youtube",
+    reddit: "reddit",
+    tiktok: "tiktok",
+    snapchat: "snapchat",
+}
+const username = "yipository";
+---
+<style>
+    footer {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+</style>
+
+<footer>
+    <Social platform={platform.github} username={username} />
+    <Social platform={platform.youtube} username={username} />
+    <Social platform={platform.gmail} username={username} />
+</footer>
