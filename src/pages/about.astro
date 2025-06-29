@@ -14,7 +14,7 @@ const identity = {
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = 3;
 
 const skillColor = "navy";
@@ -42,6 +42,7 @@ const textCase = "uppercase";
     <script>
         import "../scripts/menu.js";
     </script>
+
     <style define:vars={{skillColor, fontWeight, textCase}}>
         h1 {
             color: purple;
@@ -52,6 +53,7 @@ const textCase = "uppercase";
             font-weight: var(--fontWeight);
             text-transform: var(--textCase);
         }
+
     </style>
 
 </Layout>
